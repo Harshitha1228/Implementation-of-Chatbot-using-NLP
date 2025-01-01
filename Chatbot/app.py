@@ -14,7 +14,7 @@ nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
 
 # Load intents from the JSON file
-file_path = os.path.abspath("./mount/src/implementation-of-chatbot-using-nlp/intents.json")
+file_path = os.path.abspath("./intents.json")
 if not os.path.exists(file_path):
     st.error(f"File not found: {file_path}. Please ensure the intents.json file is located at this path.")
     st.stop()
